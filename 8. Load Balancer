@@ -1,0 +1,16 @@
+Purpose
+Distribute traffic.
+
+Types:
+Application Load Balancer
+Network Load Balancer
+Gateway Load Balancer
+
+Real-Time Scenario:
+10000 Requests
+
+        ALB
+      /  |  \
+   EC2 EC2 EC2
+
+No single server overload.
