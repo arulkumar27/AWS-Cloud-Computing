@@ -1,0 +1,38 @@
+What is EBS?
+Persistent block storage for EC2.
+
+Why EBS?
+Data survives:
+
+Reboot
+Stop
+Start
+
+EBS Types:
+
+gp3
+General Purpose SSD
+
+io2
+High Performance SSD
+
+st1
+Throughput Optimized HDD
+
+sc1
+Cold HDD
+
+Real-Time Scenario:
+Database Server
+
+EC2
+ │
+EBS
+
+Even if EC2 restarts:
+Database remains intact
+
+Snapshot:
+
+Backup of EBS Volume.
+Stored in S3 internally.
