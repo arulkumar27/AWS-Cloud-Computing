@@ -1,0 +1,114 @@
+
+What is EKS?
+Amazon EKS is a managed Kubernetes service.
+
+AWS manages:
+Kubernetes Control Plane
+High Availability
+Security Patches
+
+You manage:
+Worker Nodes
+Applications
+
+Why Kubernetes?
+Imagine:
+50 Containers
+100 Containers
+500 Containers
+
+Managing manually becomes impossible.
+
+Kubernetes automates:
+
+Deployment
+Scaling
+Self Healing
+Load Balancing
+
+EKS Architecture:
+Users
+   ↓
+Load Balancer
+   ↓
+EKS Cluster
+   ↓
+Worker Nodes
+   ↓
+Pods
+
+Kubernetes Components:
+
+Pod:
+Smallest deployable unit.
+
+Pod
+ ↓
+Container
+
+Deployment:
+Manages pods.
+
+Example:
+Desired Pods = 3
+One Pod Fails
+New Pod Created
+
+Service:
+Exposes application.
+Users
+  ↓
+Service
+  ↓
+Pods
+
+Node:
+Worker machine running pods.
+
+Real-Time Scenario:
+Netflix-like Streaming Platform
+
+Users
+   ↓
+ALB
+   ↓
+EKS Cluster
+   ↓
+100+ Pods
+   ↓
+Microservices
+
+Services:
+
+Authentication
+Payments
+Videos
+Recommendations
+Notifications
+
+Each service runs independently.
+
+Benefits:
+Self Healing
+Pod Crash
+    ↓
+New Pod Created
+
+Auto Scaling:
+Traffic Increase
+      ↓
+More Pods
+
+Rolling Updates:
+Version 1
+     ↓
+Version 2
+
+Without downtime.
+
+Interview Questions:
+What is a Pod?
+Smallest deployable unit in Kubernetes containing one or more containers.
+
+What is a Deployment?
+Object used to manage pods and maintain desired state.
