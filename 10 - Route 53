@@ -1,0 +1,42 @@
+What is Route 53?
+AWS DNS service.
+
+Converts domain names into IP addresses.
+
+Example:
+User enters:
+amazon.com
+
+DNS resolves:
+54.x.x.x
+
+Browser reaches server.
+
+Routing Policies:
+
+Simple Routing
+Single resource.
+
+Weighted Routing
+Traffic split.
+
+Example:
+80% → Server A
+20% → Server B
+
+Failover Routing:
+Primary and backup systems.
+
+Real-Time Scenario:
+
+Global Application
+
+India Users
+      ↓
+Mumbai Region
+
+US Users
+      ↓
+Virginia Region
+
+Route 53 directs users to nearest available application.
