@@ -1,0 +1,136 @@
+Real-Time E-Commerce Architecture:
+
+Imagine Amazon, Flipkart, or Myntra.
+
+Millions of users access the platform daily.
+
+Architecture Diagram:
+
+                    Users
+                       │
+                       ▼
+                   Route53
+                       │
+                       ▼
+                  CloudFront
+                       │
+                       ▼
+             Application Load Balancer
+                       │
+                       ▼
+              Auto Scaling Group
+              │               │
+              ▼               ▼
+            EC2             EC2
+              │               │
+              └───────┬───────┘
+                      ▼
+                    RDS
+                      │
+                      ▼
+                     S3
+
+Monitoring → CloudWatch
+Auditing   → CloudTrail
+Secrets    → Secrets Manager
+Management → Systems Manager
+
+Request Flow:
+
+Step 1
+User opens:
+www.company.com
+Route53 resolves DNS.
+
+Step 2
+CloudFront serves cached content.
+CSS
+JavaScript
+Images
+Videos
+
+Step 3
+ALB distributes traffic.
+
+Request 1 → EC2-A
+Request 2 → EC2-B
+Request 3 → EC2-C
+
+Step 4
+Auto Scaling handles demand.
+
+Normal Traffic
+      ↓
+2 Servers
+
+High Traffic
+      ↓
+20 Servers
+
+Step 5
+Application accesses database.
+
+Orders
+Users
+Payments
+Products
+
+Stored in RDS.
+
+Step 6
+Images and backups stored in S3.
+
+Disaster Recovery Scenario
+AZ Failure
+AZ-A Down
+     ↓
+AZ-B Active
+
+Application remains available.
+
+Database Failure:
+
+Primary RDS Down
+        ↓
+Standby RDS Active
+
+Automatic failover.
+
+DevOps Engineer Responsibilities:
+
+Daily Tasks
+Monitor Infrastructure
+Review CloudWatch Alerts
+Manage IAM Permissions
+Deploy Applications
+Optimize Costs
+Maintain Backups
+Investigate CloudTrail Logs
+Patch Servers Using SSM
+
+Final Interview Question:
+
+Design a Highly Available AWS Architecture
+
+Expected Answer:
+
+Route53
+   ↓
+CloudFront
+   ↓
+Application Load Balancer
+   ↓
+Auto Scaling EC2 Across Multiple AZs
+   ↓
+RDS Multi-AZ
+   ↓
+S3 Storage
+
+Monitoring:
+CloudWatch
+
+Auditing:
+CloudTrail
+
+Security:
+IAM + Security Groups + Secrets Manager
