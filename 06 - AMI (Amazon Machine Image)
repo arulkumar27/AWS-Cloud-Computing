@@ -1,0 +1,33 @@
+What is AMI?
+Template used to launch EC2 instances.
+
+Contains:
+
+OS
+Software
+Configuration
+Packages
+
+Types:
+
+AWS Managed AMI
+Provided by AWS.
+
+Marketplace AMI
+Provided by vendors.
+
+Custom AMI
+Created by users.
+
+Real-Time Scenario:
+Need 100 Web Servers.
+
+Without AMI:
+Install Apache 100 Times
+
+With AMI:
+Install Once
+Create AMI
+Launch 100 Servers
+
+Huge time savings.
