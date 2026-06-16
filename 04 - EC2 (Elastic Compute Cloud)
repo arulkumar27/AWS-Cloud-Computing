@@ -1,0 +1,68 @@
+What is EC2?
+EC2 provides virtual servers in AWS.
+
+Instance Types:
+General Purpose
+
+Balanced resources.
+
+Example:
+
+t3.micro
+t3.small
+Compute Optimized
+
+CPU intensive workloads.
+
+Example:
+
+c5.large
+Memory Optimized
+
+Large memory applications.
+
+Example:
+
+r5.large
+
+Launch Process:
+AMI
+ ↓
+Instance Type
+ ↓
+Storage
+ ↓
+Security Group
+ ↓
+Launch
+
+Security Group:
+Acts as virtual firewall.
+
+Example:
+
+Port 22 → SSH
+Port 80 → HTTP
+Port 443 → HTTPS
+Real-Time Scenario
+
+E-Commerce Website
+
+Users
+ ↓
+Load Balancer
+ ↓
+EC2 Servers
+
+Application runs on EC2.
+
+Interview Questions:
+Difference Between Stop and Terminate?
+
+Stop:
+
+Instance can restart.
+
+Terminate:
+
+Instance permanently deleted.
