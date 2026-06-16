@@ -1,0 +1,42 @@
+What is Auto Scaling?
+Automatically adjusts EC2 count based on traffic.
+
+Benefits:
+High Availabi:lity
+Cost Optimization
+Performance Improvement
+
+Scaling Types:
+
+Dynamic Scaling
+Triggered by metrics.
+
+Example:
+CPU > 70%
+Add server automatically.
+
+Scheduled Scaling:
+Scale at predefined times.
+
+Real-Time Scenario:
+Flipkart Sale
+
+Normal:
+
+2 Servers
+
+Sale Time:
+
+20 Servers
+
+Auto Scaling handles demand.
+
+Architecture:
+
+Users
+ ↓
+ALB
+ ↓
+Auto Scaling Group
+ ↓
+EC2 Instances
