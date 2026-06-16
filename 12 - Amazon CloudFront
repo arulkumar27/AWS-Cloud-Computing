@@ -1,0 +1,53 @@
+What is CloudFront?
+CloudFront is AWS Content Delivery Network (CDN).
+It delivers content from the nearest Edge Location.
+
+Why CloudFront?
+
+Without CDN:
+
+India User
+     ↓
+US Server
+
+High latency.
+
+With CDN:
+
+India User
+     ↓
+Nearest Edge Location
+
+Fast delivery.
+
+Components:
+Origin
+
+Source of content.
+
+Examples:
+
+S3 Bucket
+EC2
+Load Balancer
+Edge Location
+
+Caches content closer to users.
+
+Real-Time Scenario:
+
+Netflix-like Application
+
+Users
+   ↓
+CloudFront
+   ↓
+S3
+
+Video loads faster globally.
+
+Benefits
+Faster Website
+Reduced Server Load
+DDoS Protection
+SSL Support
