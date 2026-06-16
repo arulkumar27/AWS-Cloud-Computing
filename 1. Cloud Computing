@@ -1,0 +1,32 @@
+What is Cloud Computing?
+Cloud Computing means renting servers, storage, networking and services over the internet instead of buying physical hardware.
+
+Real-Time Scenario:
+Company starts with 10 employees.
+
+Instead of purchasing:
+
+Server = ₹2 Lakhs
+Storage = ₹50,000
+Networking = ₹30,000
+
+They use AWS and pay only for usage.
+
+Diagram:
+Users
+  |
+Internet
+  |
+AWS Cloud
+  |
+Applications
+
+Interview Questions:
+
+Q: Why Cloud?
+Answer:
+Pay As You Go Model
+High Availability
+Scalability
+Global Reach
+Security
