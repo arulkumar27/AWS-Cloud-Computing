@@ -1,0 +1,37 @@
+What is VPC?
+Private isolated network inside AWS.
+
+Components:
+
+Subnet
+Logical network segment.
+
+Route Table
+Traffic routing rules.
+
+Internet Gateway
+Internet access.
+
+NAT Gateway
+Private subnet internet access.
+
+Real-Time Production Architecture:
+Internet
+   │
+Internet Gateway
+   │
+Public Subnet
+   │
+ALB
+   │
+Private Subnet
+   │
+EC2
+   │
+RDS
+
+Security Benefits:
+
+Network Isolation
+Controlled Access
+Segmentation
