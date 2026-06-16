@@ -1,0 +1,19 @@
+Purpose
+Automatically increase or decrease servers.
+
+Real-Time Scenario:
+Flipkart Big Billion Day
+
+Traffic:
+100 Users
+1000 Users
+10000 Users
+
+Auto Scaling adds EC2 automatically.
+
+Diagram:
+CPU > 70%
+
+Auto Scaling
+      |
+Add EC2
