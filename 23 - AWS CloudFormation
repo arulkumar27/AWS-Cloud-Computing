@@ -1,0 +1,90 @@
+What is CloudFormation?
+CloudFormation is AWS Infrastructure as Code (IaC) service.
+
+Instead of manually creating resources:
+
+EC2
+VPC
+S3
+RDS
+
+You define infrastructure using code.
+
+Why CloudFormation?
+Manual Process:
+
+Create VPC
+Create Subnet
+Create EC2
+Configure Security
+
+Time Consuming.
+
+CloudFormation:
+
+Template
+    ↓
+Automatic Deployment
+
+Infrastructure as Code:
+Example:
+
+Resources:
+
+  MyEC2:
+    Type: AWS::EC2::Instance
+
+  MyBucket:
+    Type: AWS::S3::Bucket
+
+CloudFormation Workflow:
+Template
+    ↓
+Stack
+    ↓
+Resources Created
+Stack
+
+Collection of AWS resources managed together.
+
+Example:
+Production Stack
+
+VPC
+EC2
+RDS
+ALB
+
+Real-Time Scenario:
+
+Company needs:
+
+Development Environment
+Testing Environment
+Production Environment
+
+Using CloudFormation:
+
+Single Template
+       ↓
+Deploy Anywhere
+
+Consistency guaranteed.
+
+Benefits:
+Version Control
+Infrastructure stored in GitHub.
+
+Repeatability
+Same infrastructure every time.
+
+Automation
+No manual configuration.
+
+Interview Questions:
+
+What is IaC?
+Managing infrastructure through code instead of manual processes.
+
+Why CloudFormation?
+Provides automated, repeatable, and version-controlled infrastructure deployments.
