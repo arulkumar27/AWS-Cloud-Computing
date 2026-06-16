@@ -1,0 +1,42 @@
+What is Systems Manager?
+Centralized management service for AWS resources.
+
+Key Features:
+
+Session Manager:
+Connect to EC2 without SSH.
+
+Patch Manager:
+Automate OS updates.
+
+Run Command:
+Execute commands remotely.
+
+Inventory:
+Collect server information.
+
+Real-Time Scenario:
+500 EC2 Instances need patching.
+
+Without SSM:
+
+Login to 500 Servers
+Patch Manually
+
+With SSM:
+
+Patch Manager
+      ↓
+All Servers Updated
+
+Architecture:
+Admin
+  ↓
+SSM
+  ↓
+EC2 Fleet
+
+Benefits:
+Improved Security
+Reduced Manual Work
+Centralized Management
