@@ -1,0 +1,35 @@
+What is API Gateway?
+Managed service for creating APIs.
+Acts as front door for backend services.
+
+Architecture:
+Client
+   ↓
+API Gateway
+   ↓
+Lambda
+
+Features:
+Authentication
+Authorization
+Rate Limiting
+Monitoring
+Versioning
+
+Real-Time Scenario:
+Food Delivery App
+
+Mobile App
+     ↓
+API Gateway
+     ↓
+Lambda
+     ↓
+DynamoDB
+
+User requests order details through APIs.
+
+Benefits:
+Secure APIs
+Scalable APIs
+Monitoring Built-In
