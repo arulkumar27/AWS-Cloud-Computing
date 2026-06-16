@@ -1,0 +1,94 @@
+
+What is Cloud Computing?
+
+Cloud Computing is the delivery of computing resources such as servers, storage, databases, networking, security, and software over the internet on a pay-as-you-go basis.
+
+Traditionally, companies purchased physical servers and maintained them in their own data centers. Cloud computing eliminates this requirement by allowing organizations to rent infrastructure from cloud providers like Amazon Web Services, Microsoft Azure, and Google Cloud.
+
+Why Cloud Computing?
+Traditional Infrastructure Problems
+High initial investment
+Hardware maintenance costs
+Limited scalability
+Data center management
+Power and cooling expenses
+Disaster recovery complexity
+Cloud Benefits
+Pay only for usage
+Global accessibility
+High availability
+Elastic scalability
+Improved security
+Faster deployment
+Real-Time Scenario
+
+A startup launches an e-commerce website.
+
+Traditional Method:
+Buy Server
+Install OS
+Configure Network
+Purchase Storage
+Maintain Hardware
+
+Time Required: 2-4 Weeks
+
+Cloud Method:
+Create AWS Account
+Launch EC2
+Deploy Application
+Go Live
+
+Time Required: 15 Minutes
+
+Cloud Service Models:
+IaaS (Infrastructure as a Service)
+
+You manage:
+
+Applications
+Data
+Runtime
+OS
+
+Provider manages:
+
+Servers
+Storage
+Networking
+
+Example:
+
+AWS EC2
+PaaS (Platform as a Service)
+
+You manage:
+
+Application
+Data
+
+Provider manages everything else.
+
+Example:
+
+AWS Elastic Beanstalk
+SaaS (Software as a Service)
+
+Everything managed by provider.
+
+Examples:
+
+Gmail
+Office 365
+Salesforce
+Interview Questions
+What is Cloud Computing?
+
+Cloud computing is the on-demand delivery of IT resources over the internet with pay-as-you-go pricing.
+
+What are the advantages?
+Scalability
+Cost Optimization
+High Availability
+Security
+Global Reach
