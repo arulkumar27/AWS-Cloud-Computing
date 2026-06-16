@@ -1,0 +1,77 @@
+What is AWS Well-Architected Framework?
+Collection of best practices for building secure, reliable, efficient, and cost-effective systems.
+
+Six Pillars
+1. Operational Excellence
+Run and monitor systems effectively.
+
+Examples:
+
+Automation
+Monitoring
+Incident Response
+
+2. Security
+Protect systems and data.
+
+Examples:
+
+IAM
+MFA
+Encryption
+
+3. Reliability
+Recover from failures quickly.
+
+Examples:
+
+Multi-AZ
+Auto Scaling
+Backups
+
+4. Performance Efficiency
+Use resources efficiently.
+
+Examples:
+
+CloudFront
+Auto Scaling
+Caching
+
+5. Cost Optimization
+Reduce unnecessary spending.
+
+Examples:
+
+Right Sizing
+Reserved Instances
+Spot Instances
+
+6. Sustainability
+Minimize environmental impact.
+
+Examples:
+Serverless
+Auto Scaling
+Efficient Resource Usage
+
+Real-Time Scenario:
+Banking Application
+
+Requirements:
+
+Secure
+Reliable
+Highly Available
+Cost Effective
+
+Well-Architected Framework ensures all requirements are met.
+
+Interview Questions:
+What are the six pillars?
+Operational Excellence
+Security
+Reliability
+Performance Efficiency
+Cost Optimization
+Sustainability
