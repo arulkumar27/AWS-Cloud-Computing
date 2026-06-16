@@ -1,0 +1,65 @@
+What is IAM?
+
+IAM controls authentication and authorization in AWS.
+
+Authentication:
+Who are you?
+
+Authorization:
+What can you access?
+
+IAM Components:
+
+Users
+Individual identities.
+
+Example:
+Arul
+Kumar
+Developer1
+Groups
+
+Collection of users.
+
+Example:
+Developers
+Admins
+Testers
+Policies
+
+JSON documents defining permissions.
+
+Example:
+
+{
+ "Effect":"Allow",
+ "Action":"ec2:StartInstances",
+ "Resource":"*"
+}
+Roles
+
+Temporary permissions assigned to AWS services.
+
+Example:
+
+EC2 → Access S3
+
+No access keys required.
+
+IAM Best Practices
+Never use Root Account daily
+Enable MFA
+Follow Least Privilege Principle
+Rotate Credentials
+Use IAM Roles
+Real-Time Scenario
+
+Developer needs EC2 access.
+
+Wrong:
+
+AdministratorAccess
+
+Correct:
+
+Allow only EC2 permissions
