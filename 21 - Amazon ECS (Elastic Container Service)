@@ -1,0 +1,137 @@
+What is ECS?
+Amazon ECS is a fully managed container orchestration service used to deploy, manage, and scale Docker containers.
+Before ECS, DevOps engineers manually managed Docker containers on servers.
+
+With ECS:
+
+Write Dockerfile
+      ↓
+Build Image
+      ↓
+Push to ECR
+      ↓
+Deploy to ECS
+      ↓
+AWS Manages Containers
+
+Why ECS?
+Problems Without ECS
+Container Crash
+       ↓
+Manual Restart
+
+Traffic Increase
+       ↓
+Manual Scaling
+
+ECS Solution:
+Container Crash
+       ↓
+Auto Recovery
+
+Traffic Increase
+       ↓
+Auto Scaling
+
+ECS Components:
+
+Cluster
+Logical group of resources.
+
+Production Cluster
+Development Cluster
+Testing Cluster
+
+Task Definition:
+Blueprint for containers.
+
+Contains:
+
+Docker Image
+CPU
+Memory
+Ports
+
+Environment Variables:
+Example:
+
+{
+  "family":"nginx-app",
+  "cpu":"256",
+  "memory":"512"
+}
+Task
+
+Running instance of Task Definition.
+
+Task Definition
+       ↓
+Running Container
+Service
+
+Ensures desired number of tasks run continuously.
+
+Example:
+
+Desired Count = 3
+
+If 1 Container Fails
+
+ECS Launches New Container
+
+Launch Types:
+EC2 Launch Type
+You manage EC2 instances.
+
+EC2
+ ↓
+Docker
+ ↓
+Containers
+
+Fargate Launch Type:
+AWS manages servers.
+
+Containers
+    ↓
+Fargate
+    ↓
+AWS Handles Infrastructure
+
+Most companies prefer Fargate.
+
+Real-Time Scenario:
+Food Delivery Application
+
+Users
+   ↓
+ALB
+   ↓
+ECS Service
+   ↓
+Containers
+   ↓
+Database
+
+During lunch hours:
+
+100 Users
+     ↓
+5000 Users
+
+ECS automatically scales containers.
+
+Interview Questions:
+ECS vs EKS
+
+ECS:
+
+AWS Native
+Easier Management
+Less Complexity
+
+EKS:
+
+Kubernetes Based
+More Flexible
+Industry Standard
