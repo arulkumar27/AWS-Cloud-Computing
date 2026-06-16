@@ -1,0 +1,59 @@
+What is S3?
+Amazon S3 is an object storage service used to store and retrieve any amount of data from anywhere.
+
+Key Features:
+Unlimited Storage
+High Durability (11 9's)
+High Availability
+Versioning
+Lifecycle Management
+Encryption
+
+S3 Components:
+Bucket
+Container for storing objects.
+
+Example:
+company-production-images
+company-backups
+devops-logs
+
+Object
+Actual file stored inside bucket.
+
+Example:
+image.jpg
+backup.zip
+logs.txt
+
+Storage Classes:
+
+Standard
+Frequently accessed data.
+
+Standard-IA
+Infrequent access.
+
+Glacier Instant Retrieval
+Archived data.
+
+Glacier Deep Archive
+Long-term backup.
+
+Real-Time Scenario:
+E-Commerce Website
+
+Customer Uploads Product Image
+            ↓
+           S3
+            ↓
+Website Displays Image
+
+Millions of images can be stored efficiently.
+
+Interview Questions:
+Difference Between EBS and S3?
+EBS	                S3
+Block               Storage	Object Storage
+Attached to EC2	    Independent
+Single AZ	          Regional Service
