@@ -1,0 +1,12 @@
+What is AMI?
+Template used to create EC2.
+
+Real-Time Scenario:
+100 Servers Needed
+
+Without AMI:
+Install Software 100 Times
+
+With AMI:
+Create AMI Once
+Launch 100 Servers
