@@ -1,0 +1,41 @@
+What is ELB?
+Distributes incoming traffic across multiple servers.
+
+Types:
+
+Application Load Balancer (ALB)
+HTTP/HTTPS traffic.
+
+Network Load Balancer (NLB)
+TCP/UDP traffic.
+
+Gateway Load Balancer
+Security appliances.
+
+Real-Time Scenario:
+10000 Requests
+
+Without Load Balancer:
+
+One Server
+ ↓
+Crash
+
+With Load Balancer:
+
+ALB
+│
+├── EC2
+├── EC2
+└── EC2
+
+Traffic distributed evenly.
+
+Health Checks:
+
+ELB continuously checks server health.
+
+If unhealthy:
+
+Remove Server
+Route Traffic Elsewhere
