@@ -1,0 +1,57 @@
+What is RDS?
+Managed relational database service.
+
+AWS handles:
+Backups
+Patching
+Monitoring
+Failover
+
+Supported Databases:
+MySQL
+PostgreSQL
+MariaDB
+Oracle
+SQL Server
+
+Architecture:
+Application
+     ↓
+Primary DB
+     ↓
+Standby DB
+
+Multi-AZ:
+Database replicated to another AZ.
+
+If primary fails:
+
+Primary Down
+     ↓
+Automatic Failover
+     ↓
+Standby Becomes Primary
+
+Read Replica:
+Used for read-heavy workloads.
+
+Primary DB
+   │
+   ├── Read Replica
+   ├── Read Replica
+   └── Read Replica
+
+Real-Time Scenario:
+Online Shopping Website
+
+Users
+  ↓
+Application
+  ↓
+RDS MySQL
+
+Stores:
+
+Orders
+Customers
+Payments
