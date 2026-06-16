@@ -1,0 +1,48 @@
+What is CloudWatch?
+Monitoring and observability service.
+
+What Can Be Monitored?
+
+EC2:
+CPU
+Memory
+Disk
+
+RDS:
+Connections
+CPU
+Storage
+
+Lambda:
+Invocations
+Errors
+
+CloudWatch Components:
+
+Metrics
+Performance data.
+
+Logs
+Application logs.
+
+Alarms
+Notifications when thresholds exceed.
+
+Real-Time Scenario:
+Production Server
+
+CPU > 80%
+     ↓
+CloudWatch Alarm
+     ↓
+SNS
+     ↓
+Email Alert
+
+DevOps Engineer immediately notified.
+
+Interview Questions:
+Difference Between CloudWatch and CloudTrail?
+
+CloudWatch = Monitoring
+CloudTrail = Auditing
