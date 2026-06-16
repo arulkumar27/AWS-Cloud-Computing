@@ -1,0 +1,27 @@
+What is EC2?
+Virtual Server in AWS.
+
+Launch Steps:
+Select AMI
+Select Instance Type
+Create Key Pair
+Configure Security Group
+Launch
+
+Real-Time Scenario:
+E-Commerce Website
+
+Customers
+   |
+ALB
+   |
+EC2 Instances
+
+Diagram:
+Internet
+   |
+Load Balancer
+   |
+EC2
+EC2
+EC2
