@@ -1,0 +1,42 @@
+What is CloudTrail?
+Tracks all AWS account activities.
+
+Why CloudTrail?
+Answer questions like:
+
+Who deleted EC2?
+Who modified Security Group?
+Who created IAM User?
+
+Architecture:
+User Action
+      ↓
+CloudTrail
+      ↓
+Log Stored
+
+Example Event:
+User: Developer1
+
+Action:
+Terminate EC2
+
+Time:
+10:35 AM
+
+CloudTrail records everything.
+
+Real-Time Scenario:
+Production outage occurs.
+
+Investigation team checks:
+
+CloudTrail Logs
+
+to identify root cause.
+
+Benefits:
+Compliance
+Auditing
+Security Investigation
+Governance
