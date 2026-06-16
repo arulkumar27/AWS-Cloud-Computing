@@ -1,0 +1,69 @@
+What is AWS Global Infrastructure?
+
+AWS operates data centers worldwide to provide highly available and fault-tolerant services.
+
+Infrastructure consists of:
+
+Regions
+Availability Zones
+Edge Locations
+Region
+
+A Region is a geographical location containing multiple data centers.
+
+Examples:
+
+ap-south-1
+us-east-1
+eu-west-1
+Availability Zone
+
+Each Region contains multiple Availability Zones.
+
+Example:
+
+Mumbai Region
+│
+├── AZ-A
+├── AZ-B
+└── AZ-C
+
+Each AZ is physically separate.
+
+If AZ-A fails:
+
+Application
+     ↓
+AZ-B continues serving traffic
+Edge Locations
+
+Used by CloudFront CDN.
+
+Purpose:
+
+Faster content delivery
+Reduced latency
+Real-Time Scenario
+
+Netflix stores content globally.
+
+User from Chennai:
+
+Request Movie
+      ↓
+Nearest Edge Location
+      ↓
+Movie Delivered
+
+Fast performance worldwide.
+
+Interview Questions:
+Why Multiple AZs?
+
+To achieve high availability and fault tolerance.
+
+Difference Between Region and AZ?
+
+Region = Geographical area
+
+AZ = Data center inside Region
