@@ -1,0 +1,44 @@
+What is DynamoDB?
+Fully managed NoSQL database service.
+
+Stores data as:
+Key → Value
+
+Benefits:
+Millisecond Response
+Automatic Scaling
+Serverless
+Highly Available
+
+Example Record:
+
+{
+ "UserID":"1001",
+ "Name":"Arul",
+ "City":"Salem"
+}
+
+Real-Time Scenario:
+Gaming Application
+
+Millions of players.
+
+Players
+   ↓
+DynamoDB
+
+Handles massive traffic automatically.
+
+Use Cases:
+Gaming
+IoT
+Mobile Apps
+Real-Time Analytics
+
+Interview Questions:
+RDS vs DynamoDB
+
+RDS              	DynamoDB
+SQL	              NoSQL
+Fixed Schema	    Flexible Schema
+Joins Supported  	No Joins
