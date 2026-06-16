@@ -1,0 +1,42 @@
+What is Lambda?
+Serverless compute service.
+Run code without managing servers.
+
+Benefits:
+No Server Management
+Pay Per Execution
+Auto Scaling
+Event Driven
+
+Supported Triggers:
+S3
+API Gateway
+CloudWatch
+DynamoDB
+
+Architecture:
+File Upload
+     ↓
+S3
+     ↓
+Lambda Trigger
+     ↓
+Process File
+
+Real-Time Scenario:
+Profile Picture Upload
+
+User Uploads Image
+        ↓
+S3
+        ↓
+Lambda
+        ↓
+Resize Image
+        ↓
+Store Processed Image
+
+Interview Question:
+
+Why Lambda?
+Ideal for event-driven workloads without server management.
